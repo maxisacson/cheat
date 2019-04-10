@@ -48,6 +48,20 @@ class Configuration:
             'light',
         ]).strip().lower()
 
+        # self.cheat_256colors
+        self.cheat_256colors = self._select([
+            Utils.boolify(os.environ.get('CHEAT_256COLORS')),
+            Utils.boolify(config.get('CHEAT_256COLORS')),
+            False,
+        ])
+
+        # self.cheat_pygmets_style
+        self.cheat_pygments_style = self._select([
+            os.environ.get('CHEAT_PYGMENTS_STYLE'),
+            config.get('CHEAT_PYGMENTS_STYLE'),
+            'default',
+        ])
+
         # self.cheat_user_dir
         self.cheat_user_dir = self._select(
             map(os.path.expanduser,

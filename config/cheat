@@ -1,6 +1,8 @@
 {
-  "CHEAT_COLORS"      : true,
-  "CHEAT_COLORSCHEME" : "light",
-  "CHEAT_EDITOR"      : "vi",
-  "CHEAT_PATH"        : "/usr/share/cheat"
+  "CHEAT_COLORS"        : true,
+  "CHEAT_COLORSCHEME"   : "light",
+  "CHEAT_EDITOR"        : "vi",
+  "CHEAT_PATH"          : "/usr/share/cheat",
+  "CHEAT_256COLORS"     : false,
+  "CHEAT_PYGMENTS_STYLE : "default"
 }
