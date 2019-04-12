@@ -22,7 +22,7 @@ cheat tar
 You will be presented with a cheatsheet resembling:
 
 ```sh
-# To extract an uncompressed archive: 
+# To extract an uncompressed archive:
 tar -xvf '/path/to/foo.tar'
 
 # To extract a .gz archive:
@@ -143,6 +143,28 @@ WHERE id = 100
 
 If no syntax highlighter is specified, the `bash` highlighter will be used by
 default.
+
+### Using 256 Colors ###
+For additional flexibility when setting the colorsheme you can tell `cheat`
+to use 256 colors by setting an additional environment variable:
+
+```sh
+export CHEAT_256COLORS=true
+```
+
+This also gives the ability to explicitly choose the colorcheme used by Pygmets
+by setting:
+
+```sh
+export CHEAT_PYGMENTS_STYLE='monokai'
+```
+
+Valid colorschemes can be checked with
+
+```sh
+$ pygmentize -L
+```
+
 
 ### Enabling Search Match Highlighting ###
 `cheat` can optionally be configured to highlight search term matches in search
